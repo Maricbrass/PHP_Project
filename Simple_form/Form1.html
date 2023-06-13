@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form1</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="Form1_css.css" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <h1>Entry Form</h1>
+  <form action="insert.php" method="post">
+    <div>
+      <label for="name">Name:</label><br>
+      <input type="text" name="name" id="name" size="30" maxlength="60" placeholder="Name" />
+    </div>
+    <div>
+      <label for="email">Email:</label><br>
+      <input type="text" name="email" id="email" size="30" maxlength="80" placeholder="example@email.com" />
+    </div>
+    <div>
+      <label for="password">Password:</label><br>
+      <input type="password" name="password" id="password" size="30" maxlength="20" placeholder="password" />
+    </div>
+    <div>
+      <label for="Address">Address:</label><br>
+      <input type="text" name="address" id="address" size="30" maxlength="80" placeholder="address" />
+    </div>
+    <div>
+      <label for="gender">Gender:</label><br>
+      <select name="gender" id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="btn-group-lg"><br>
+      <button type="submit" name="submit" class="btn btn-success">Submit</button>
+      <button type="reset" name="reset" class="btn btn-success">Reset</button>
+    </div>
+  </form>
+</body>
+</html>
